@@ -22,7 +22,8 @@ if os.name == "nt":
 class Spinner(object):
     CLEAR_LINE = "\033[K"
     max_width = 120
-    frames = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
+    # frames = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
+    frames = ["x", "+"]
 
     def __init__(self, enabled=True, refresh_rate=0.1):
         self.refresh_rate = refresh_rate
